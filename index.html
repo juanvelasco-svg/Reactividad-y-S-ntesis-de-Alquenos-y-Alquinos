@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Mental: Alquenos y Alquinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-atom"></i> Mapa Mental Interactivo: Reactividad y Síntesis de Alquenos y Alquinos</h1>
+                <p class="subtitle">Guía visual para estudiantes de química orgánica - Navega, interactúa y aprende</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <div class="progress-text">Progreso: <span id="progressPercent">0%</span></div>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- NAVIGATION PANEL -->
+            <aside class="navigation-panel">
+                <div class="nav-section">
+                    <h3><i class="fas fa-map-signs"></i> Navegación Rápida</h3>
+                    <div class="nav-links">
+                        <a href="#fundamentos-alquenos" class="nav-link active" data-section="fundamentos">
+                            <i class="fas fa-book"></i> 1. Fundamentos de Alquenos
+                        </a>
+                        <a href="#hidratacion-alquenos" class="nav-link" data-section="hidratacion">
+                            <i class="fas fa-flask"></i> 2. Métodos de Hidratación
+                        </a>
+                        <a href="#otras-reacciones" class="nav-link" data-section="otras-reacciones">
+                            <i class="fas fa-vial"></i> 3. Otras Reacciones
+                        </a>
+                        <a href="#polimerizacion" class="nav-link" data-section="polimerizacion">
+                            <i class="fas fa-link"></i> 4. Polimerización y Metátesis
+                        </a>
+                        <a href="#introduccion-alquinos" class="nav-link" data-section="alquinos">
+                            <i class="fas fa-fire"></i> 5. Introducción a Alquinos
+                        </a>
+                        <a href="#sintesis-organica" class="nav-link" data-section="sintesis">
+                            <i class="fas fa-brain"></i> 6. Estrategias de Síntesis
+                        </a>
+                    </div>
+                </div>
+
+                <div class="stats-panel">
+                    <h4><i class="fas fa-chart-line"></i> Tu Progreso</h4>
+                    <div class="stat-item">
+                        <span>Secciones completadas:</span>
+                        <span id="completedSections">0/6</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Tarjetas revisadas:</span>
+                        <span id="reviewedCards">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Tiempo estimado:</span>
+                        <span>45-60 min</span>
+                    </div>
+                    <button id="resetProgress" class="btn-reset">
+                        <i class="fas fa-redo"></i> Reiniciar Progreso
+                    </button>
+                </div>
+            </aside>
+
+            <!-- CONTENT AREA -->
+            <div class="content-area">
+                <!-- SECTION 1: FUNDAMENTOS DE ALQUENOS -->
+                <section id="fundamentos-alquenos" class="content-section active">
+                    <div class="section-header">
+                        <h2><i class="fas fa-book-open"></i> 1. Fundamentos de Alquenos</h2>
+                        <div class="section-controls">
+                            <button class="btn-toggle" data-section="fundamentos">
+                                <i class="fas fa-expand"></i> Expandir/Contraer
+                            </button>
+                            <button class="btn-mark-complete" data-section="fundamentos">
+                                <i class="far fa-check-circle"></i> Marcar como Completado
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cards-container">
+                        <!-- CARD 1.1 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>1.1 El enlace doble C=C</h3>
+                                <span class="card-tag">Concepto Clave</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-image-container">
+                                    <img src="images/alqueno-pi-bond.png" alt="Representación del enlace pi en alquenos" class="card-image">
+                                    <p class="image-caption">Electrones π deslocalizados por encima y debajo del plano molecular</p>
+                                </div>
+                                <div class="card-content">
+                                    <p>El <strong>enlace doble</strong> es el grupo funcional característico de los alquenos:</p>
+                                    <ul>
+                                        <li><strong>Enlace σ (sigma):</strong> Fuerte y localizado entre núcleos de carbono.</li>
+                                        <li><strong>Enlace π (pi):</strong> Más débil, electrones deslocalizados por encima y por debajo del plano molecular.</li>
+                                    </ul>
+                                    <div class="info-box important">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <p><strong>Comportamiento químico:</strong> El enlace π actúa como <strong>nucleófilo</strong>, donando electrones a electrófilos fuertes (H⁺, Br⁺) para formar enlaces σ más estables.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn-quiz" data-quiz="1.1">Test Rápido</button>
+                                <button class="btn-bookmark" data-card="1.1">
+                                    <i class="far fa-bookmark"></i> Guardar
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 1.2 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>1.2 Mecanismo de Adición Electrofílica</h3>
+                                <span class="card-tag">Mecanismo</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <p>La mayoría de las reacciones de alquenos siguen este mecanismo en <strong>dos pasos</strong>:</p>
+                                    <div class="mechanism-step">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4>Paso lento (limitante)</h4>
+                                            <p>Ataque del electrófilo (E⁺) al enlace π, formando un <strong>carbocatión</strong>.</p>
+                                            <div class="chemical-equation">
+                                                Alqueno + E⁺ → Carbocatión
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mechanism-step">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4>Paso rápido</h4>
+                                            <p>Ataque nucleófilo (Nu:) al carbocatión, formando el producto de adición.</p>
+                                            <div class="chemical-equation">
+                                                Carbocatión + Nu: → Producto final
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-box tip">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <p><strong>Recuerda:</strong> La formación del carbocatión es el paso determinante de la velocidad. La estabilidad del carbocatión afecta la velocidad y el producto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 1.3 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>1.3 Regla de Markovnikov</h3>
+                                <span class="card-tag">Regla Fundamental</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-image-container">
+                                    <img src="images/markovnikov-rule.png" alt="Ilustración de la regla de Markovnikov" class="card-image">
+                                    <p class="image-caption">El protón se une al carbono con más hidrógenos</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="rule-box">
+                                        <h4>Regla Original (1869, Vladimir Markovnikov):</h4>
+                                        <p>En la adición de un protón (H⁺) a un alqueno asimétrico, el H se une al carbono con <strong>más hidrógenos</strong>.</p>
+                                        <div class="chemical-equation highlight">
+                                            H⁺ se adiciona a CH₂ en lugar de CHR₂
+                                        </div>
+                                    </div>
+                                    <div class="rule-box">
+                                        <h4>Regla Ampliada:</h4>
+                                        <p>El electrófilo se adiciona de modo que se forme el <strong>carbocatión más estable</strong>:</p>
+                                        <div class="stability-scale">
+                                            <div class="stability-item most-stable">
+                                                <span>Terciario (3°)</span>
+                                                <span>></span>
+                                            </div>
+                                            <div class="stability-item">
+                                                <span>Secundario (2°)</span>
+                                                <span>></span>
+                                            </div>
+                                            <div class="stability-item">
+                                                <span>Primario (1°)</span>
+                                                <span>></span>
+                                            </div>
+                                            <div class="stability-item least-stable">
+                                                <span>Metilo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-box warning">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <p><strong>Excepción importante:</strong> Adición <strong>anti-Markovnikov</strong> de HBr en presencia de peróxidos (mecanismo por radicales libres). No funciona con HCl o HI.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: HIDRATACIÓN -->
+                <section id="hidratacion-alquenos" class="content-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-flask"></i> 2. Métodos de Hidratación de Alquenos</h2>
+                        <div class="section-controls">
+                            <button class="btn-toggle" data-section="hidratacion">
+                                <i class="fas fa-expand"></i> Expandir/Contraer
+                            </button>
+                            <button class="btn-mark-complete" data-section="hidratacion">
+                                <i class="far fa-check-circle"></i> Marcar como Completado
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cards-container">
+                        <!-- CARD 2.1 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>2.1 Hidratación Ácida</h3>
+                                <span class="card-tag">Tradicional</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="method-details">
+                                    <div class="method-item">
+                                        <strong>Reactivos:</strong> H₂O, H₂SO₄
+                                    </div>
+                                    <div class="method-item">
+                                        <strong>Mecanismo:</strong> Adición electrofílica seguida de ataque nucleofílico del agua
+                                    </div>
+                                    <div class="method-item">
+                                        <strong>Orientación:</strong> Markovnikov
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="info-box warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <p><strong>Limitación importante:</strong> Puede ocurrir <strong>transposición</strong> del carbocatión, dando mezclas de productos.</p>
+                                    </div>
+                                    <div class="comparison">
+                                        <h4>Problemas comunes:</h4>
+                                        <ul>
+                                            <li>Rearreglos de carbocationes</li>
+                                            <li>Bajos rendimientos con alquenos sensibles</li>
+                                            <li>Condiciones ácidas fuertes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2.2 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>2.2 Oximercuración-Desmercuración</h3>
+                                <span class="card-tag">Preciso</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="method-details">
+                                    <div class="method-item">
+                                        <strong>Reactivos:</strong> 1) Hg(OAc)₂, H₂O 2) NaBH₄
+                                    </div>
+                                    <div class="method-item">
+                                        <strong>Mecanismo:</strong> Vía ion mercurinio
+                                    </div>
+                                    <div class="method-item">
+                                        <strong>Orientación:</strong> Markovnikov limpio
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="info-box important">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p><strong>Ventajas clave:</strong></p>
+                                        <ul>
+                                            <li>Sin transposiciones</li>
+                                            <li>Producto Markovnikov limpio</li>
+                                            <li>Condiciones suaves</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recommendation">
+                                        <h4>¿Cuándo usar?</h4>
+                                        <p>Cuando la <strong>integridad del esqueleto de carbono</strong> es crítica (evitar reordenamientos).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2.3 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>2.3 Hidroboración-Oxidación</h3>
+                                <span class="card-tag">Anti-Markovnikov</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="method-details">
+                                    <div class="method-item">
+                                        <strong>Reactivos:</strong> BH₃ (o BH₃·THF) / H₂O₂, NaOH
+                                    </div>
+                                    <div class="method-item">
+                                        <strong>Mecanismo:</strong> Adición concertada en un paso
+                                    </div>
+                                    <div class="method-item">
+                                        <strong>Orientación:</strong> Anti-Markovnikov
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-image-container">
+                                        <img src="images/hydroboration-mechanism.png" alt="Mecanismo de hidroboración" class="card-image">
+                                        <p class="image-caption">El boro se une al carbono menos sustituido (menos impedido)</p>
+                                    </div>
+                                    <div class="feature-list">
+                                        <h4>Características únicas:</h4>
+                                        <div class="feature-item">
+                                            <i class="fas fa-arrow-up"></i>
+                                            <span><strong>Regioquímica:</strong> Anti-Markovnikov</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-sync-alt"></i>
+                                            <span><strong>Estereoquímica:</strong> Adición Sin (mismo lado)</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-award"></i>
+                                            <span><strong>Premio Nobel 1979:</strong> H.C. Brown</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-box tip">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <p>La hidroboración es ideal para sintetizar alcoholes primarios a partir de alquenos terminales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: OTRAS REACCIONES -->
+                <section id="otras-reacciones" class="content-section">
+                    <!-- Contenido similar para sección 3 -->
+                    <div class="section-header">
+                        <h2><i class="fas fa-vial"></i> 3. Otras Reacciones de Alquenos</h2>
+                        <div class="section-controls">
+                            <button class="btn-toggle" data-section="otras-reacciones">
+                                <i class="fas fa-expand"></i> Expandir/Contraer
+                            </button>
+                            <button class="btn-mark-complete" data-section="otras-reacciones">
+                                <i class="far fa-check-circle"></i> Marcar como Completado
+                            </button>
+                        </div>
+                    </div>
+                    <div class="placeholder-content">
+                        <i class="fas fa-vial fa-3x"></i>
+                        <h3>Sección en construcción</h3>
+                        <p>Contenido detallado de halogenación, epoxidación, hidroxilación y ruptura oxidativa.</p>
+                    </div>
+                </section>
+
+                <!-- REST OF SECTIONS 4-6 SIMILAR STRUCTURE -->
+                <!-- Se agregarían las secciones 4, 5 y 6 con estructura similar -->
+
+                <!-- SUMMARY SECTION -->
+                <section class="summary-section">
+                    <h2><i class="fas fa-chart-pie"></i> Resumen Visual</h2>
+                    <div class="mindmap-container">
+                        <div class="mindmap-node center">
+                            <span>Alquenos y Alquinos</span>
+                        </div>
+                        <div class="mindmap-branch">
+                            <div class="mindmap-node">
+                                <span>Adición Electrofílica</span>
+                            </div>
+                            <div class="mindmap-subnode">
+                                <span>Markovnikov</span>
+                            </div>
+                            <div class="mindmap-subnode">
+                                <span>Anti-Markovnikov</span>
+                            </div>
+                        </div>
+                        <!-- Más nodos del mapa mental -->
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-graduation-cap"></i> Recursos de Estudio</h4>
+                    <ul>
+                        <li><a href="#" id="printSummary">Imprimir Resumen</a></li>
+                        <li><a href="#" id="generateQuiz">Generar Quiz Personalizado</a></li>
+                        <li><a href="#" id="flashcards">Tarjetas de Estudio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-cogs"></i> Herramientas</h4>
+                    <ul>
+                        <li><a href="#" id="mechanismSimulator">Simulador de Mecanismos</a></li>
+                        <li><a href="#" id="reactionPredictor">Predictor de Productos</a></li>
+                        <li><a href="#" id="synthesisPlanner">Planner de Síntesis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-info-circle"></i> Información</h4>
+                    <p>Basado en el contenido de: <em>Alquenos_Alquinos_Síntesis_y_Transformación.pdf</em> y <em>qumicaorgnica-wadevol17maedicion.pdf</em></p>
+                    <p class="copyright">© 2024 Mapa Mental Interactivo - Química Orgánica</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- MODAL FOR QUIZZES -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="quizContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
